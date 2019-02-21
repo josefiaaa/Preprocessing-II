@@ -241,3 +241,17 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .btn {
+  background-color: teal;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  padding: 10px 5%;
+  width: 205px;
+  font-size: 2rem;
+  border-radius: 10px;
+}
+.home .btn:hover {
+  background-color: white;
+  color: teal;
+}
