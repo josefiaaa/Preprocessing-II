@@ -2,8 +2,8 @@
 
 // Button
 
-.custom-button(@width: 205px, @bg-color:teal, @font-color: white) {
-    background-color: @bg-color;
+.custom-button (@width: 205px, @background: @button-bg, @font-color: white, @bg-color: @button-bg) {
+    background: @background;
     color: @font-color;
     text-align: center;
     cursor: pointer;
@@ -16,5 +16,6 @@
     &:hover {
       background-color: @font-color;
       color: @bg-color;
+      border: 1px solid @bg-color;
     }
 }

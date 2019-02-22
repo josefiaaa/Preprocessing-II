@@ -1,7 +1,7 @@
 .home {
 
   header {
-    border-bottom: 2px dashed grey;
+    border-bottom: 2px dashed @navigation-border;
     padding-bottom: 20px;
 
     h2 {
@@ -72,4 +72,64 @@
   .btn {
     .custom-button();
   }
+
 }// home
+
+@media @mobile {
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+}
+
+@media @mobile {
+  
+  .home {
+    flex-direction: column;
+
+    .content-section {
+      width: 100%;
+
+      .text-content{
+        width: 100%;
+
+      }
+    }
+  }
+}
+
+@media @mobile {
+  .home .content-section .img-content{
+    width: 100%;
+  }
+}
+
+@media @mobile {
+
+  .home .inverse-content {
+    flex-direction: column-reverse;
+
+    .img-content {
+      width: 100%;
+    }
+  }
+}
+
+@media @mobile {
+
+  .home .content-pick {
+    flex-direction: column;
+
+    .destination {
+      width: 100%;
+
+      .btn {
+        width: 100%;
+      }
+
+    }
+
+  }
+
+}
